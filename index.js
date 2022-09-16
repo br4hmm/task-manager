@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
+const tasksRoutes = require('./routes/tasks');
 require('dotenv').config();
 
 const app = express();
@@ -18,7 +19,7 @@ mongoose
   });
 
 app.use(morgan('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+app.use('/api/v1/tasks', tasksRoutes);
