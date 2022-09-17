@@ -3,6 +3,7 @@ const asyncWrapper = func => {
     try {
       await func(req, res, next);
     } catch (err) {
+      err.status = 500;
       next(err);
     }
   };
