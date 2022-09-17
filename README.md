@@ -16,3 +16,5 @@ Task manger built with Express.js & MongoDB
 - Update task &nbsp; &nbsp; `PATCH /api/v1/tasks/:id`
 - Replace task &nbsp; &nbsp; `PUT /api/v1/tasks/:id` &nbsp; _Note: Use it only for testing_
 - Delete task &nbsp; &nbsp; &nbsp; `DELETE /api/v1/tasks/:id`
+
+_Enjoy 🤗_
