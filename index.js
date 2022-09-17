@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
 const tasksRoutes = require('./routes/tasks');
+const errorHandler = require('./middlewares/error');
 require('dotenv').config();
 
 const app = express();
@@ -26,3 +27,4 @@ app.use('/api/v1/tasks', tasksRoutes);
 
 // 404 Not Found!
 app.use((req, res) => res.status(404).send('Route dose not exist'));
+app.use(errorHandler);
