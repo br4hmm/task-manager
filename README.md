@@ -1,6 +1,6 @@
 # Task Manager
 
-Task manger built with Express.js
+Task manger built with Express.js & MongoDB
 
 ## HTTP Methods
 
