@@ -4,9 +4,9 @@ Task manger built with Express.js & MongoDB
 
 ## Demo
 
-<a href="url"><img src="scn1.png" style="border-radius:20px"></a>
+![screenshot 1](scn1.png)
 
-<a href="url"><img src="scn2.png" style="border-radius:20px"></a>
+![screenshot 1](scn2.png)
 
 ## HTTP Methods
 
