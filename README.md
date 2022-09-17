@@ -2,6 +2,12 @@
 
 Task manger built with Express.js & MongoDB
 
+## Demo
+
+![screenshot 1](./scn1.png)
+
+![screenshot 2](./scn2.png)
+
 ## HTTP Methods
 
 - Get all tasks &nbsp; &nbsp; `GET /api/v1/tasks`
