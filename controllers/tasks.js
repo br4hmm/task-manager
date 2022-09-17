@@ -5,7 +5,7 @@ const getAllTasks = async (req, res) => {
     const tasks = await Task.find();
     res.status(200).send({ tasks });
   } catch (err) {
-    res.status(500).json(err);
+    res.status(500).json({ msg: err });
   }
 };
 
@@ -14,7 +14,7 @@ const createTask = async (req, res) => {
     const task = await Task.create(req.body);
     res.status(201).json({ task });
   } catch (err) {
-    res.status(500).send(err);
+    res.status(500).json({ msg: err });
   }
 };
 
@@ -27,7 +27,7 @@ const getTask = async (req, res) => {
     }
     res.status(200).json({ task });
   } catch (err) {
-    res.status(500).send(err);
+    res.status(500).json({ msg: err });
   }
 };
 
@@ -43,7 +43,7 @@ const updateTask = async (req, res) => {
     }
     res.status(200).json({ task });
   } catch (err) {
-    res.status(500).send(err);
+    res.status(500).json({ msg: err });
   }
 };
 
@@ -56,7 +56,7 @@ const deleteTask = async (req, res) => {
     }
     res.status(200).json({ task });
   } catch (err) {
-    res.status(500).send(err);
+    res.status(500).json({ msg: err });
   }
 };
 
