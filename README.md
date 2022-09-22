@@ -8,13 +8,15 @@ Task manger built with Express.js & MongoDB
 
 ![screenshot 1](scn2.png)
 
-## HTTP Methods
+## Routes
 
-- Get all tasks &nbsp; &nbsp; `GET /api/v1/tasks`
-- Create task &nbsp;&nbsp; &nbsp; `POST /api/v1/tasks`
-- Get task &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `GET /api/v1/tasks/:id`
-- Update task &nbsp; &nbsp; `PATCH /api/v1/tasks/:id`
-- Replace task &nbsp; &nbsp; `PUT /api/v1/tasks/:id` &nbsp; _Note: Use it only for testing_
-- Delete task &nbsp; &nbsp; &nbsp; `DELETE /api/v1/tasks/:id`
+| About         | HTTP Methods               |
+| ------------- | -------------------------- |
+| Get all tasks | `GET /api/v1/tasks`        |
+| Create task   | `POST /api/v1/tasks`       |
+| Get task      | `GET /api/v1/tasks/:id`    |
+| Update task   | `PATCH /api/v1/tasks/:id`  |
+| Replace task  | `PUT /api/v1/tasks/:id`    |
+| Delete task   | `DELETE /api/v1/tasks/:id` |
 
 _Enjoy 🤗_
